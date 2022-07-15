@@ -12,7 +12,10 @@ public abstract class User extends ID {
   private String password;
   private String email;
   private String avatar;
-  private List<Chat> chatList;
+  private List<Chat> chatsList;
+  private List<Chat> groupsList;
+  private List<User> friendsUsersList;
+  private List<User> blackUserList;
   private Date createdAt;
 
   public User(long id, String name, String surname, String password, String email, String avatar) {
