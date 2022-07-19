@@ -1,19 +1,18 @@
 package com.tinder.model.user;
 
-import com.tinder.model.ID;
+import com.tinder.model.BaseEntity;
 import com.tinder.model.chat.Chat;
 
 import java.util.Date;
 import java.util.List;
 
-public abstract class User extends ID {
+public abstract class User extends BaseEntity {
   private String name;
   private String surname;
   private String password;
   private String email;
   private String avatar;
   private List<Chat> chatsList;
-  private List<Chat> groupsList;
   private List<User> friendsUsersList;
   private List<User> blackUserList;
   private Date createdAt;
